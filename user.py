@@ -20,8 +20,8 @@ def read_file(filename):
     fh = open(filename, "r")
     return json.load(fh)
 
-ACCOUNT_USERNAME = 'dheeraj009joshi'
-ACCOUNT_PASSWORD = '12345678900'
+ACCOUNT_USERNAME = 'Maidenchai2020'
+ACCOUNT_PASSWORD = 'Hyderabad123'
 # ACCOUNT_USERNAME = 'miamiheatmapp'
 # ACCOUNT_PASSWORD = 'Hyderabad123'
 # ACCOUNT_USERNAME = 'dheerajjoshi750'
@@ -57,10 +57,10 @@ except:
     write_file(cl.get_settings(), IG_CREDENTIAL)
 
 
-hastag = "latinagirls"
-medias = cl.hashtag_medias_top("latinagirls",2)
+
+datas=cl.location_medias_recent(4612,50)
 hastags=[]
-for aap in medias:
+for aap in datas:
     data=aap.json()
     hastags.append(data)
 
@@ -232,103 +232,103 @@ for users in usernamee:
 
     
 
-for count,i in enumerate(userrr):
+# for count,i in enumerate(userrr):
     
-    print("..........................", "type of userrr:   " , type(userrr))
-    print("........................", "type of i  ", type(i))
+#     print("..........................", "type of userrr:   " , type(userrr))
+#     print("........................", "type of i  ", type(i))
     
-    print()
-    print()
-    print()
+#     print()
+#     print()
+#     print()
 
-    print(i)
+#     print(i)
 
-    print()
-    print()
-    print()
-    try:
-        user_pk.append(i["pk"])
-        print()
-        print('this')
-        print(i["pk"])
-        print()
-    except Exception as e:
-        print('in exception')
-        print(e)
-        user_pk.append('null')
-    try:
-        user_name.append(i["username"])
-        print()
-        print('this')
-        print(i["pk"])
-        print()
-    except Exception as e:
-        print('in exception')
-        print(e)
-        user_name.append('null')
-    try:
-        full_name.append(i["full_name"])
-    except:
-        full_name.append('null')
-    try:
-        is_private.append(i["is_private"])
-    except:
-        is_private.append('null')
-    try:
-        profile_pic_url.append(i["profile_pic_url"])
-    except:
-        profile_pic_url.append('null')
-    try:
-        profile_pic_url_hd.append(i["profile_pic_url_hd"])
-    except:
-        profile_pic_url_hd.append('null')
-    try:
-        is_verified.append(i["is_verified"])
-    except:
-        is_verified.append('null')
-    try:
-        media_count.append(i["media_count"])
-    except:
-        media_count.append('null')
-    try:
-        follower_count.append(i["follower_count"])
-    except:
-        follower_count.append('null')
-    try:
-        following_count.append(i["following_count"])
-    except:
-        following_count.append('null')
-    try:
-        biography.append(i["biography"])
-    except:
-        biography.append('null')
-    try:
-        data=str(i["biography"]).split(" ")
-        print(data)
-        data1=data.index("📍")
-        item=data[data1+1]
-        item2=data[data1]
-        print(data1)
-        print()
-        print()
-        print(item)
-        print()
-        print(item2)
-        native_place.append(item)
-    except:
-        native_place.append('null')
-    try:
-        external_url.append(i["external_url"])
-    except:
-        external_url.append('null')
-    try:
-        is_business.append(i["is_business"])
-    except:
-        is_business.append('null')
-    try:
-        public_email.append(i["public_email"])
-    except:
-        public_email.append('null')
+#     print()
+#     print()
+#     print()
+#     try:
+#         user_pk.append(i["pk"])
+#         print()
+#         print('this')
+#         print(i["pk"])
+#         print()
+#     except Exception as e:
+#         print('in exception')
+#         print(e)
+#         user_pk.append('null')
+#     try:
+#         user_name.append(i["username"])
+#         print()
+#         print('this')
+#         print(i["pk"])
+#         print()
+#     except Exception as e:
+#         print('in exception')
+#         print(e)
+#         user_name.append('null')
+#     try:
+#         full_name.append(i["full_name"])
+#     except:
+#         full_name.append('null')
+#     try:
+#         is_private.append(i["is_private"])
+#     except:
+#         is_private.append('null')
+#     try:
+#         profile_pic_url.append(i["profile_pic_url"])
+#     except:
+#         profile_pic_url.append('null')
+#     try:
+#         profile_pic_url_hd.append(i["profile_pic_url_hd"])
+#     except:
+#         profile_pic_url_hd.append('null')
+#     try:
+#         is_verified.append(i["is_verified"])
+#     except:
+#         is_verified.append('null')
+#     try:
+#         media_count.append(i["media_count"])
+#     except:
+#         media_count.append('null')
+#     try:
+#         follower_count.append(i["follower_count"])
+#     except:
+#         follower_count.append('null')
+#     try:
+#         following_count.append(i["following_count"])
+#     except:
+#         following_count.append('null')
+#     try:
+#         biography.append(i["biography"])
+#     except:
+#         biography.append('null')
+#     try:
+#         data=str(i["biography"]).split(" ")
+#         print(data)
+#         data1=data.index("📍")
+#         item=data[data1+1]
+#         item2=data[data1]
+#         print(data1)
+#         print()
+#         print()
+#         print(item)
+#         print()
+#         print(item2)
+#         native_place.append(item)
+#     except:
+#         native_place.append('null')
+#     try:
+#         external_url.append(i["external_url"])
+#     except:
+#         external_url.append('null')
+#     try:
+#         is_business.append(i["is_business"])
+#     except:
+#         is_business.append('null')
+#     try:
+#         public_email.append(i["public_email"])
+#     except:
+#         public_email.append('null')
 
 
 post_user_pk=[]
@@ -442,41 +442,41 @@ df_user_post = pd.DataFrame({
 
 })
 print(df_user_post)
-filename_user = hastag + "_user_posts.csv"
+filename_user = 'hastag' + "_user_posts.csv"
 
 df_user_post.to_csv(filename_user)
 
 
 
 
-# # # # # # # # # # # # # # # # # # user  detail  csv ####################################
+# # # # # # # # # # # # # # # # # # # user  detail  csv ####################################
 
 
-df_user=pd.DataFrame({'pk':user_pk,
-'username':user_name,
-'full_name':full_name,
-'profile_pic_url':profile_pic_url,
-'profile_pic_url_hd':profile_pic_url_hd,
-'is_verified':is_verified,
-'media_count':media_count,
-'follower_count':follower_count,
-'following_count':following_count,
-'biography':biography,
-'native_place':native_place,
-'external_url':external_url,
-'is_business':is_business,
-'public_email':public_email,
+# df_user=pd.DataFrame({'pk':user_pk,
+# 'username':user_name,
+# 'full_name':full_name,
+# 'profile_pic_url':profile_pic_url,
+# 'profile_pic_url_hd':profile_pic_url_hd,
+# 'is_verified':is_verified,
+# 'media_count':media_count,
+# 'follower_count':follower_count,
+# 'following_count':following_count,
+# 'biography':biography,
+# 'native_place':native_place,
+# 'external_url':external_url,
+# 'is_business':is_business,
+# 'public_email':public_email,
 
 
-})
+# })
 
 
-print(df_user)
-filename_user = hastag + "_user.csv"
+# print(df_user)
+# filename_user = hastag + "_user.csv"
 
-df_user.to_csv(filename_user)
+# df_user.to_csv(filename_user)
 
-# # # # # # # # # # # # # # # # # #   hastag  csv    #   # # # # # ## # # # # # # # ##  # 
+# # # # # # # # # # # # # # # # # # #   hastag  csv    #   # # # # # ## # # # # # # # ##  # 
 
 
 df_hastag = pd.DataFrame({'pk':pk,
@@ -500,7 +500,7 @@ df_hastag = pd.DataFrame({'pk':pk,
 
 
 })
-filename = hastag + ".csv"
+filename = 'location' + ".csv"
 
 df_hastag.to_csv(filename)
 
@@ -516,7 +516,7 @@ df_location= pd.DataFrame({
 'username':usernamee,
 'user_pk':pk_user,
 })
-filename = hastag + "location.csv"
+filename = 'hastag' + "location.csv"
 
 df_hastag.to_csv(filename)
 

@@ -18,33 +18,10 @@ def read_file(filename):
     return json.load(fh)
 
 
-# ACCOUNT_USERNAME = 'digital_solution_673'
-# ACCOUNT_PASSWORD = 'Digitalsolution@1234'
-# ACCOUNT_USERNAME = 'datusers'
-# ACCOUNT_PASSWORD = 'datusers##'
-# ACCOUNT_USERNAME = 'tester.dp'
-# ACCOUNT_PASSWORD = 'dimpesh@123'
-# ACCOUNT_USERNAME = 'instatracker001'
-# ACCOUNT_PASSWORD = 'dat123@@'
-# ACCOUNT_USERNAME = 'instatracker003'
-# ACCOUNT_PASSWORD = 'instatracker'
-# ACCOUNT_USERNAME = 'techdigi_788'
-# ACCOUNT_PASSWORD = 'Techdigi788@1234'
-# ACCOUNT_USERNAME = 'dimpesh.tester'
-# ACCOUNT_PASSWORD = 'dimpesh@123'
-# ACCOUNT_USERNAME = 'digitech_799'
-# ACCOUNT_PASSWORD = 'Digitech@1234'
-# ACCOUNT_USERNAME = 'instatracker002'
-# ACCOUNT_PASSWORD = 'instatracker'
-# ACCOUNT_USERNAME = 'ka.vyasharma__'
-# ACCOUNT_PASSWORD = 'wn+{?R656sdty6s0,(}fY[+'
-ACCOUNT_USERNAME = 'dheeraj009joshi'
-ACCOUNT_PASSWORD = '12345678900'
-# ACCOUNT_USERNAME = 'hiteshgehlot2019'
-# ACCOUNT_PASSWORD = 'instatracker3'
-# ACCOUNT_USERNAME = 'hydra123schol'
-# ACCOUNT_PASSWORD = 'hydra@123'
-# ACCOUNT_USERNAMES=['dheeraj009joshi','hiteshgehlot2019','ka.vyasharma__','instatracker002','instatracker003']
+
+ACCOUNT_USERNAME = 'maidenstank@hotmail.com'
+ACCOUNT_PASSWORD = 'Hyderabad123'
+
 IG_CREDENTIAL = ACCOUNT_USERNAME
 # # IG_CREDENTIAL = random.choice(ACCOUNT_USERNAMES)
 print(IG_CREDENTIAL)
