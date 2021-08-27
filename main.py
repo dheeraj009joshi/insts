@@ -19,7 +19,7 @@ def read_file(filename):
 
 
 
-ACCOUNT_USERNAME = 'maidenstank@hotmail.com'
+ACCOUNT_USERNAME = 'maidenvaper'
 ACCOUNT_PASSWORD = 'Hyderabad123'
 
 IG_CREDENTIAL = ACCOUNT_USERNAME
